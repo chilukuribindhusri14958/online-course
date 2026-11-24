@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify - Online Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Learn<span>ify.</span></h2>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO LEARNIFY</p>
+            <h1>Learn New Skills.<br>
+                Build Your <span>Future.</span>
+            </h1>
+
+            <p>
+                Discover online courses and learn from expert
+                instructors. Improve your knowledge and achieve
+                your career goals.
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=700"
+                 alt="Students learning together">
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+        <h2>Course Categories</h2>
+        <p class="subtitle">Explore different fields and learn something new.</p>
+
+        <div class="category-container">
+            <div class="category">💻<h3>Programming</h3></div>
+            <div class="category">🎨<h3>Design</h3></div>
+            <div class="category">📊<h3>Business</h3></div>
+            <div class="category">📱<h3>Technology</h3></div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section courses-section">
+        <h2>Popular Courses</h2>
+        <p class="subtitle">Choose your favourite course and start learning.</p>
+
+        <input type="text" id="searchInput"
+               class="search-box"
+               placeholder="Search courses...">
+
+        <div class="course-container" id="courseContainer">
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                     alt="Web development">
+                <div class="course-info">
+                    <span class="course-category">Programming</span>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS and JavaScript from basics.</p>
+                    <div class="course-bottom">
+                        <strong>₹999</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                     alt="Python programming">
+                <div class="course-info">
+                    <span class="course-category">Programming</span>
+                    <h3>Python Programming</h3>
+                    <p>Understand Python with simple practical examples.</p>
+                    <div class="course-bottom">
+                        <strong>₹799</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=500"
+                     alt="Graphic design">
+                <div class="course-info">
+                    <span class="course-category">Design</span>
+                    <h3>Graphic Design</h3>
+                    <p>Learn creative design and visual communication.</p>
+                    <div class="course-bottom">
+                        <strong>₹899</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+                     alt="Digital marketing">
+                <div class="course-info">
+                    <span class="course-category">Business</span>
+                    <h3>Digital Marketing</h3>
+                    <p>Learn marketing strategies for online business.</p>
+                    <div class="course-bottom">
+                        <strong>₹699</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500"
+                     alt="Data science">
+                <div class="course-info">
+                    <span class="course-category">Technology</span>
+                    <h3>Data Science</h3>
+                    <p>Discover data analysis and basic data science.</p>
+                    <div class="course-bottom">
+                        <strong>₹1199</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                     alt="UI UX design">
+                <div class="course-info">
+                    <span class="course-category">Design</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Create attractive and user-friendly interfaces.</p>
+                    <div class="course-bottom">
+                        <strong>₹999</strong>
+                        <button class="enroll-btn">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p id="noResults"></p>
+    </section>
+
+    <!-- Instructors -->
+    <section id="instructors" class="section">
+        <h2>Our Instructors</h2>
+        <p class="subtitle">Learn from experienced professionals.</p>
+
+        <div class="instructor-container">
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300"
+                     alt="Instructor John">
+                <h3>John Smith</h3>
+                <p>Web Development Expert</p>
+            </div>
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300"
+                     alt="Instructor Sarah">
+                <h3>Sarah Wilson</h3>
+                <p>UI/UX Design Expert</p>
+            </div>
+
+            <div class="instructor-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300"
+                     alt="Instructor David">
+                <h3>David Brown</h3>
+                <p>Python Programming Expert</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews">
+        <h2>Student Reviews</h2>
+
+        <div class="review-container">
+            <div class="review-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"The courses are easy to understand and very useful."</p>
+                <strong>- Ananya</strong>
+            </div>
+
+            <div class="review-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"Learnify helped me improve my programming skills."</p>
+                <strong>- Rahul</strong>
+            </div>
+
+            <div class="review-card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"A great platform for learning new technologies."</p>
+                <strong>- Priya</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p class="subtitle">Have questions? Send us a message.</p>
+
+        <form id="contactForm">
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Learnify.</h2>
+        <p>Learn Today, Lead Tomorrow!</p>
+        <p>© 2026 Learnify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
